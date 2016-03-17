@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<!-- param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1}:%L - %m%n"/ -->
+			<param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1}:%L - %m%n"/>
+		</layout>
+	</appender>
+	<appender name="file" class="org.apache.log4j.FileAppender">
+		<param name="Append" value="false"/>
+		<param name="File" value="/home/logs/BankCustomerTest_MC.log"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1}:%L - %m%n"/>
+		</layout>
+	</appender>
+	<logger name="com.tcs" additivity="false">
+		<level value="debug"/>
+		<appender-ref ref="file"/>
+	</logger>
+	
+	<!-- For reflection package, log only errors as this can normally emit a lot of debug statements -->
+	<logger name="com.tcs.gui.arch.reflect" additivity="false">
+		<level value="error"/>
+		<appender-ref ref="file"/>
+	</logger>
+	<logger name="com.googlecode.scopeplugin" additivity="false">
+		<level value="debug"/>
+		<appender-ref ref="file"/>	
+	</logger>
+	<root>
+		<level value="warn"/>
+		<appender-ref ref="file"/>
+	</root>	
+</log4j:configuration>
