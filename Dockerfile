@@ -5,7 +5,7 @@ MAINTAINER Yugesh yugesh.a@tcs.com;
 # Ensure that rtConf.properties:temp directory points to /tmp/MasterCraftFileManager
 # Ensure that all artifacts are available in current directory
 # Ensure that postgres server postgres user has password (re)set ALTER USER postgres WITH password "postgres"
-
+USER root
 # Copy artifacts from EAM env into server
 
 # Copy ear into /opt/wildfly-9.0.1.Final/standalone/deployments
