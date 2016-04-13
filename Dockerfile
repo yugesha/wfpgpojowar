@@ -11,7 +11,6 @@ COPY Deployment/InitW1/TestInstallation/scripts/startservers.sh /home
 # Copy database dump
 COPY Deployment/InitW1/TestInstallation/scripts/database.sql /home
 # Copy runtime libraries
-COPY Deployment/InitW1/TestInstallation/dependencies/postgresql-8.4-702.jdbc3.jar /opt/wildfly-9.0.1.Final/standalone/lib/ext
 COPY Deployment/InitW1/TestInstallation/database/org /opt/wildfly-9.0.1.Final/modules/system/layers/base/org
 # Create volumes
 VOLUME /var/lib/postgresql/9.4/main
