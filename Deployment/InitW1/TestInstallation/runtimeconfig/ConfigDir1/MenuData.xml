@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE menu [<!ELEMENT menu (menuGroup*, menuLink*)*>
+
+<!ELEMENT menuGroup (menuGroup*|menuLink+)+>
+<!ELEMENT menuLink (#PCDATA)>
+
+
+<!ATTLIST menuGroup key CDATA #REQUIRED>
+<!ATTLIST menuGroup label CDATA #REQUIRED>
+
+<!ATTLIST menuLink key CDATA #REQUIRED>
+<!ATTLIST menuLink label CDATA #REQUIRED>
+<!ATTLIST menuLink mode CDATA #REQUIRED>
+<!ATTLIST menuLink windowname CDATA #REQUIRED>
+<!ATTLIST menuLink module CDATA #REQUIRED>]><menu><menuGroup key="CompTestGUI" label="CompTestGUI">
+    <menuLink label="Create  myclassreveng"  key="CompTestGUI.EditMCmyclassreveng" windowname="EditMCmyclassreveng" module="CompTestGUI"  mode="DEFAULT"/>
+    <menuLink label="EGridmyclassreveng"  key="CompTestGUI.EGridmyclassreveng" windowname="EGridmyclassreveng" module="CompTestGUI"  mode="DEFAULT"/>
+    <menuLink label="SearchMCmyclassreveng"  key="CompTestGUI.SearchMCmyclassreveng" windowname="SearchMCmyclassreveng" module="CompTestGUI"  mode="DEFAULT"/>
+</menuGroup >
+</menu>

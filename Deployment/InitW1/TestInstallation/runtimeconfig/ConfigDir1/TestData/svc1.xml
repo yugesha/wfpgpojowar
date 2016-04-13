@@ -1,0 +1,75 @@
+<vector>
+  <int>1</int> <!-- Max Error Severity -->
+  <vector> 
+  	<!-- Data Begin -->
+    <com.tcs.test.mo.BasicDataClass>
+      <intAttr>111</intAttr>
+      <doubleAttr>0.0</doubleAttr>
+      <floatAttr>0.0</floatAttr>
+      <bigDecimalAttr>1234.5678</bigDecimalAttr>
+      <longAttr>0</longAttr>
+      <dateAttr>20032112</dateAttr>
+    </com.tcs.test.mo.BasicDataClass>
+    <vector>
+	    <com.tcs.test.mo.BasicDataClass>
+	      <intAttr>222</intAttr>
+	      <doubleAttr>0.0</doubleAttr>
+	      <floatAttr>0.0</floatAttr>
+	      <bigDecimalAttr>1234.5678</bigDecimalAttr>
+	      <longAttr>0</longAttr>
+	      <dateAttr>20032112</dateAttr>
+	    </com.tcs.test.mo.BasicDataClass>   
+	    <com.tcs.test.mo.BasicDataClass>
+	      <intAttr>333</intAttr>
+	      <doubleAttr>0.0</doubleAttr>
+	      <floatAttr>0.0</floatAttr>
+	      <bigDecimalAttr>1234.5678</bigDecimalAttr>
+	      <longAttr>0</longAttr>
+	      <dateAttr>20032112</dateAttr>
+	    </com.tcs.test.mo.BasicDataClass> 
+	 </vector>
+	 <!-- Data End -->
+  </vector>
+  <vector>
+  	 <!-- Messages Begin -->
+    <com.tcs.mastercraft.mctype.errlib.Message>
+      <code>0</code>
+      <rowNum>0</rowNum>
+      <jflag>false</jflag>
+      <ErrNo></ErrNo>
+      <LoggingReqd>false</LoggingReqd>
+      <ActionReqd></ActionReqd>
+      <ShortDesc></ShortDesc>
+      <LongDesc></LongDesc>
+      <Prop/>
+      <SourceComponent></SourceComponent>
+      <arg1></arg1>
+      <arg2></arg2>
+      <arg3></arg3>
+      <arg4></arg4>
+      <arg5></arg5>
+      <filename></filename>
+      <lineno>0</lineno>
+    </com.tcs.mastercraft.mctype.errlib.Message>
+    <com.tcs.mastercraft.mctype.errlib.Message>
+      <code>0</code>
+      <rowNum>0</rowNum>
+      <jflag>false</jflag>
+      <ErrNo></ErrNo>
+      <LoggingReqd>false</LoggingReqd>
+      <ActionReqd></ActionReqd>
+      <ShortDesc></ShortDesc>
+      <LongDesc></LongDesc>
+      <Prop/>
+      <SourceComponent></SourceComponent>
+      <arg1></arg1>
+      <arg2></arg2>
+      <arg3></arg3>
+      <arg4></arg4>
+      <arg5></arg5>
+      <filename></filename>
+      <lineno>0</lineno>
+    </com.tcs.mastercraft.mctype.errlib.Message>
+     <!-- Messages End -->
+  </vector>
+</vector>

@@ -1,0 +1,52 @@
+<vector>
+  <int>0</int> <!-- Max Error Severity -->
+  <vector> 
+  	<!-- Data Begin -->
+    <com.tcs.test.mo.DataTypeClassOper>
+      <doubleAttr>111.11</doubleAttr>
+    </com.tcs.test.mo.DataTypeClassOper>    
+	 <!-- Data End -->
+  </vector>
+  <vector>
+  	 <!-- Messages Begin -->
+    <com.tcs.mastercraft.mctype.errlib.Message>
+      <code>0</code>
+      <rowNum>0</rowNum>
+      <jflag>false</jflag>
+      <ErrNo></ErrNo>
+      <LoggingReqd>false</LoggingReqd>
+      <ActionReqd></ActionReqd>
+      <ShortDesc></ShortDesc>
+      <LongDesc></LongDesc>
+      <Prop/>
+      <SourceComponent></SourceComponent>
+      <arg1></arg1>
+      <arg2></arg2>
+      <arg3></arg3>
+      <arg4></arg4>
+      <arg5></arg5>
+      <filename></filename>
+      <lineno>0</lineno>
+    </com.tcs.mastercraft.mctype.errlib.Message>
+    <com.tcs.mastercraft.mctype.errlib.Message>
+      <code>1</code>
+      <rowNum>0</rowNum>
+      <jflag>false</jflag>
+      <ErrNo></ErrNo>
+      <LoggingReqd>false</LoggingReqd>
+      <ActionReqd></ActionReqd>
+      <ShortDesc></ShortDesc>
+      <LongDesc></LongDesc>
+      <Prop/>
+      <SourceComponent></SourceComponent>
+      <arg1></arg1>
+      <arg2></arg2>
+      <arg3></arg3>
+      <arg4></arg4>
+      <arg5></arg5>
+      <filename></filename>
+      <lineno>0</lineno>
+    </com.tcs.mastercraft.mctype.errlib.Message>
+     <!-- Messages End -->
+  </vector>
+</vector>
