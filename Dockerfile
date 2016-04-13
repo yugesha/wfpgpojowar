@@ -2,7 +2,7 @@
 # Base image and maintainer details
 FROM yugeshdocker1/postgres94wildfly9
 MAINTAINER EnterpriseAppsMaker mastercraft@tcs.com
-USER yugeshdocker1/postgres94wildfly9
+USER root
 # Copy EAM generated deployable
 COPY Deployment/InitW1/TestInstallation/appserver/TestInstallation.ear /opt/wildfly-9.0.1.Final/standalone/deployments
 # Copy config files
