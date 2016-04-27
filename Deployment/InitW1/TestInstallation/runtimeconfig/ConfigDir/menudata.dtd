@@ -1,0 +1,14 @@
+<!ELEMENT menu (menuGroup*, menuLink*)*>
+
+<!ELEMENT menuGroup (menuGroup*|menuLink+)+>
+<!ELEMENT menuLink (#PCDATA)>
+
+
+<!ATTLIST menuGroup key CDATA #REQUIRED>
+<!ATTLIST menuGroup label CDATA #REQUIRED>
+
+<!ATTLIST menuLink key CDATA #REQUIRED>
+<!ATTLIST menuLink label CDATA #REQUIRED>
+<!ATTLIST menuLink mode CDATA #REQUIRED>
+<!ATTLIST menuLink windowname CDATA #REQUIRED>
+<!ATTLIST menuLink module CDATA #REQUIRED>

@@ -1,0 +1,8 @@
+U:<error code2>
+U:<error code3>
+M:1438:Table message 
+M:<error code5>:<Message to be displayed>
+U:<error code6>
+M:<error code7>:<Message to be displayed>
+U:<error code8>
+M:<error code9>:<Message to be displayed>

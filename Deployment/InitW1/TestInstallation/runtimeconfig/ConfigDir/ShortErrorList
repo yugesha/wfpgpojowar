@@ -1,0 +1,13 @@
+1825361176=This record already exist with Key {0} of Class {1}
+1825361175=Database not available. Please contact Database Administrator
+1825361174=DM overflow. Please contact Database Administrator
+1825361173=Internal Error with Key {0} for Class {1}. The Oracle return code is {2} and detailed description is {3}. Please contact Database Administrator
+1825361172=Some mandatory attribute with Key {0} for Class {1} is not specified and detailed description is {2}
+1825361171=No data found with Key {0} for Class {1} and detailed description is {2}
+1825361170=Table with Key {0} for this Class {1} is locked and detailed description is {2}
+1825361169=Record with Key {0} for Class {1} is soft deleted
+1825361168=Internal System Exception {0}
+1825361167=DM truncated with Key {0} for Class {1} and detailed description is {2}
+1825361166={0}
+1825361165=Internal System Exception with  {0}. Please contact System Administrator
+1825361164=Version mismatch with Key {0} for Class {1} and detailed description is {2}
