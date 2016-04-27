@@ -73,29 +73,3 @@ sleep 2
 # JBoss monitoring 9990 
 # Tomcat monitoring 8009 
 # Postgres 5432
-
-docker run -i -t -p 9181:9181 -p 9182:9182 -p 8080:8080 -p 9990:9990 -p 8009:8009 -p 5432:5432 -p 5433:5433 --name tc -v pg94config:/etc/postgresql -v pg94data:/var/lib/postgresql --name tc yugeshdocker1/postgres94tomcat8 /bin/bash
-
-docker run -i -t -p 8761:8761 --name eureka tomcat:jre8 /bin/bash
-
-docker run -i -t -p 9080:9080 --name zuul tomcat:jre8 /bin/bash
-
-
-docker run -i -t -p 8383:8383 --name hystrix tomcat:jre8 /bin/bash
-
-docker run -i -t -p 9181:9181 -p 8080:8080 -p 8009:8009 -p 5432:5432 --name tc -v pg94config:/etc/postgresql -v pg94data:/var/lib/postgresql --name tc yugeshdocker1/postgres94tomcat8 /bin/bash
-
-
-
-docker run -i -t -p 8761:8761 --name eureka tomcat:jre8 /bin/bash
-
-docker run --add-host eurekaclient1:192.168.99.100 --add-host eureka:192.168.99.100 --add-host hystrix:192.168.99.100 -i -t -p 9080:9080 -h zuul --name zuul1 yugeshdocker1/zuul /bin/bash 
-
-
-docker run --add-host eurekaclient1:192.168.99.100 --add-host eureka:192.168.99.100 -i -t -p 8383:8383 -h hystrix --name hystrix1 yugeshdocker1/hystrix catalina.sh start
-
-docker run --add-host eurekaclient1:192.168.99.100 --add-host eureka:192.168.99.100  --add-host zuul:192.168.99.100  --add-host hystrix:192.168.99.100  -i -t -p 8761:8761 -h eureka  --name eureka1 yugeshdocker1/eureka /bin/bash
-
-docker run --add-host eurekaclient1:192.168.99.100   --add-host eureka:192.168.99.100  --add-host zuul:192.168.99.100  --add-host hystrix:192.168.99.100 -i -t -p 9181:9181 -p 8080:8080 -p 8009:8009 -p 5432:5432  -h eurekaclient1 --name tc -v pg94config:/etc/postgresql -v pg94data:/var/lib/postgresql --name tc yugeshdocker1/eurekaclient1 /bin/bash
-
-
