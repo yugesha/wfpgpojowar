@@ -3,6 +3,8 @@
 FROM yugeshdocker1/postgres94wildfly9
 MAINTAINER Enterprise AppsMaker mastercraft@tcs.com
 USER root
+# Copy EAM generated deployable
+COPY Deployment/InitW1/TestInstallation/appserver/TestInstallation.ear /opt/wildfly-9.0.1.Final/standalone/deployments
 # Copy config files
 COPY Deployment/InitW1/TestInstallation/appserver/standalone-full.xml /opt/wildfly-9.0.1.Final/standalone/configuration
 COPY Deployment/InitW1/TestInstallation/scripts/startservers.sh /home
