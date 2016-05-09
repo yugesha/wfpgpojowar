@@ -61,15 +61,3 @@ nohup su -c '/opt/rh/rh-postgresql94/root/usr/bin/postgres -D /var/lib/pgsql/dat
 nohup /opt/jboss-as-7.2.0.Final/bin/standalone.sh -Djboss.server.base.dir=IAREP -b 0.0.0.0 -c standalone.xml >/IAREP.log 2>&1 & 
 nohup /opt/jboss-as-7.2.0.Final/bin/standalone.sh -Djboss.server.base.dir=IAAPP -b 0.0.0.0 -c standalone.xml >/IAAPP.log  2>&1 &
 sleep 2
-
-# docker run -i -t -p 5432:5432 -p 8022:8022 -p 8042:8042 -p 8080:8080 --name ia -h "iahost" -v iadata:/var/lib/pgsql/data yugeshdocker1/wfpgpojowar
-
-# Eureka  Server 8761 
-# Eureka Client 1 9181 
-# Eureka Client 2 9182 
-# Web App Http 8080 
-# Zuul 9080 
-# Hystrix 8383
-# JBoss monitoring 9990 
-# Tomcat monitoring 8009 
-# Postgres 5432
