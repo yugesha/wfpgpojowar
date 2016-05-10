@@ -6,8 +6,6 @@ USER root
 # Copy config files
 COPY Deployment/InitW1/TestInstallation/appserver/standalone-full.xml /opt/wildfly-9.0.1.Final/standalone/configuration
 COPY Deployment/InitW1/TestInstallation/scripts/startservers.sh /home
-# Copy database dump
-COPY Deployment/InitW1/TestInstallation/scripts/database.sql /home
 # Copy runtime libraries
 COPY Deployment/InitW1/TestInstallation/database/org /opt/wildfly-9.0.1.Final/modules/system/layers/base/org
 # Create volumes
